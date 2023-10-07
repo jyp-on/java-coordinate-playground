@@ -1,3 +1,5 @@
+package fuel;
+
 public class K5 implements Car{
     private final int fuelEfficiency = 13;
     private final double tripDistance;
@@ -18,6 +20,6 @@ public class K5 implements Car{
 
     @Override
     public String getName() {
-        return "K5";
+        return "fuel.K5";
     }
 }

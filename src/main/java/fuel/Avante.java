@@ -1,3 +1,5 @@
+package fuel;
+
 public class Avante implements Car{
     private final int fuelEfficiency = 15;
     private final double tripDistance;
@@ -18,6 +20,6 @@ public class Avante implements Car{
 
     @Override
     public String getName() {
-        return "Avante";
+        return "fuel.Avante";
     }
 }
