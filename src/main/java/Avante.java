@@ -1,4 +1,4 @@
-public class Avante extends Car{
+public class Avante implements Car{
     private final int fuelEfficiency = 15;
     private final double tripDistance;
 
@@ -7,17 +7,17 @@ public class Avante extends Car{
     }
 
     @Override
-    double getDistancePerLiter() {
+    public double getDistancePerLiter() {
         return this.tripDistance / fuelEfficiency;
     }
 
     @Override
-    double getTripDistance() {
+    public double getTripDistance() {
         return this.tripDistance;
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return "Avante";
     }
 }

@@ -1,4 +1,4 @@
-public class K5 extends Car{
+public class K5 implements Car{
     private final int fuelEfficiency = 13;
     private final double tripDistance;
 
@@ -7,17 +7,17 @@ public class K5 extends Car{
     }
 
     @Override
-    double getDistancePerLiter() {
+    public double getDistancePerLiter() {
         return this.tripDistance / fuelEfficiency;
     }
 
     @Override
-    double getTripDistance() {
+    public double getTripDistance() {
         return this.tripDistance;
     }
 
     @Override
-    String getName() {
+    public String getName() {
         return "K5";
     }
 }
